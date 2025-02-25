@@ -1,0 +1,42 @@
+body{
+    color:white;
+    background-color:black;
+    font-family:"Comic Sans MS";
+    text-align:center;
+}
+.navItems{
+    text-decoration: none;
+    padding:20px;
+    color:white;
+}
+.navItems:hover{
+    color:red;
+}
+#logoimg{
+    margin-left:15%;
+    margin-bottom:5%;
+}
+.headerNavBar{
+    float:right;
+    margin-top:3%;
+    margin-right:25%;
+}
+.text{
+    font-size:400%;
+    text-align:center;
+}
+.redbg{
+    background-color:red;
+    border:3px solid white;
+    width:15%;
+    padding:3px;
+    margin:2%;
+}
+.whitebg{
+    background-color:white;
+    border:3px solid red;
+    width:15%;
+    padding:3px;
+    margin:2%;
+    color:red;
+}

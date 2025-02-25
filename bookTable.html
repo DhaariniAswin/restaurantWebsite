@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Book Table-Chill Out Restaurant</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            #headerMainDiv{
+                background-image:url("images/bT.jpg");
+                height: 400px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+            button {
+                border:4px solid grey;
+                font-size:130%;
+                transition-property: all;
+                transition-duration: 1s;
+            }
+            button:hover {
+                background-color:black;
+                color:white;
+            }
+            .borderdiv{
+                border:3px solid white;
+            }
+            @media (min-width:601px){
+                .borderdiv{
+                    border:3px solid white;
+                    width:60%;
+                    margin-left:20%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="headerMainDiv">
+                <img id="logoimg" src="images/Clogo.png" width=100 height=100/>
+                <nav class="headerNavBar">
+                    <a href="index.html" class="navItems">HOME</a>
+                    <a href="menu.html" class="navItems">MENU</a>
+                    <a href="gallery.html" class="navItems">GALLERY</a>
+                    <a href="liveCounters.html" class="navItems">LIVE COUNTERS</a>
+                    <a href="bookTable.html" class="navItems" style="color:red">BOOK A TABLE</a>
+                </nav> 
+                <p class="text" style="position:relative;bottom:25%">Keep calm and Chill Out</p> 
+            </div>  
+        </header>
+        <main>
+            <section>
+                <span class="text">Book a Table</span><br/><br/>
+                <div class="borderdiv"><br/>
+                    <form action="afterSubmit.html">
+                        <label for="name">Full Name :</label>
+                        <input id="name" type="text" placeholder="Full Name"/><br/><br/>
+                        <label for="num">Number of guests :</label>
+                        <input id="num" type="number" placeholder="1-15"/><br/><br/>
+                        <label for="date">Select the Date :</label>
+                        <input id="date" type="date"/><br/><br/>
+                        <label for="time">Select the Time :</label>
+                        <input id="time" type="time"/><br/><br/>
+                        <label for="num">Phone number :</label>
+                        <input id="num" type="text"  placeholder="10 digit mobile number"/><br/><br/>
+                        <label for="email">Email id :</label>
+                        <input id="email" type="email"  placeholder="valid email id"/><br/><br/>
+                        <label >Any Special Occassion :</label>
+                        <input id="bday" name="occ" type="radio"/><label for="bday">Birthday</label>
+                        <input id="ani" name="occ" type="radio"/><label for="ani">Anniversary</label>
+                        <input id="others" name="occ" type="radio"/><label for="others">Others</label>
+                        <input id="none" name="occ" type="radio"/><label for="none">None</label><br/><br/>
+                        <label>Veg or Non-veg :</label>
+                        <input id="veg" type="checkbox"/><label for="veg">Veg</label>
+                        <input id="nonveg" type="checkbox"/><label for="nonveg">Non-Veg</label><br/><br/>
+    
+                        <button>Submit</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
